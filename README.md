@@ -1,11 +1,11 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|email|string|null: false,add_index:true|
-|username|string|null: false, unique:true|
+|email|string|null: false, add_index:true|
+|name|string|null: false, unique:true ,add_index:true|
 ### Association
 - has_many :groups
-- has_many :groups through:  :uers_group
+- has_many :groups through:  :uers_groups
 - has_many :messages
 
   
@@ -17,14 +17,14 @@
 |name|string|null: false, unique: true|
 ### Association
 - has_many_to :groups_users
-- has_many_to :users  through:  :groups_users
+- has_many_to :users  ,through:  :groups_users
 - has_many_to :messages
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|string||
-|text|text|null: false|
+|text|text||
 |user_id|integer|null: false ,foreign_key: true
 |group_id|integer|null: false ,foreign_key: true
 ### Association
