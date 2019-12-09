@@ -8,7 +8,8 @@
 - has_many :groups through:  :uers_group
 - has_many :messages
 
-
+  
+  
 
 ## groupsテーブル
 |Column|Type|Options|
