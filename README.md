@@ -19,7 +19,6 @@
 - has_many_to :users  through:  :groups_users
 - has_many_to :messages
 
-
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
