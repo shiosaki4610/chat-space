@@ -2,7 +2,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false, add_index:true|
-|name|string|null: false, add_index:true|
+|name|string|null: false, unique:true, index:true|
 ### Association
 - has_many :groups
 - has_many :groups through:  :uers_groups
