@@ -9,7 +9,7 @@
 - has_many :messages
 
   
-  
+  # sssss
 
 ## groupsテーブル
 |Column|Type|Options|
